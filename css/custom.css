@@ -2,34 +2,8 @@
   box-sizing: border-box;
 }
 
-.grid:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-div.grid {
-  max-width: 1200px;
-}
-
-div.grid-item {
-  width: 200px;
-  float: left;
-}
-
-div.grid-item--width2 {
-  width: 400px;
-}
-
-div.grid-item--width3 {
-  width: 600px;
-}
-
-div img.art {
-  display: block;
-  width: 100%;
-  height: auto;
-  float: left;
+.card-columns .card {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=custom.css.map */
