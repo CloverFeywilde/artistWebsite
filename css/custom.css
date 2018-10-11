@@ -8,7 +8,17 @@
 
 @media only screen and (max-width: 576px) {
   .navbar-brand {
-    font-size: 1.2rem;
+    font-size: 1.06rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    font-size: 1.35rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-brand {
+    font-size: 1.25rem;
   }
 }
 
