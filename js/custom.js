@@ -1,7 +1,8 @@
 //Email Sending
 $(document).ready(function(){
   var from, to, subject, text;
-  $("#sendEmail").click(function(){
+  $('form').on("submit",function(event){
+    event.preventDefault();
     to = $("#emailInput").val();
     subject = $("#subjectInput").val();
     text = $("#messageInput").val();
@@ -12,7 +13,10 @@ $(document).ready(function(){
        text: text},
       function(data){
         if(data=="sent"){
-	  $("#sendStatus").empty().html("Message sent!");
+	  $("#emailInput").empty();
+	  $("#subjectInput").empty();
+	  $("#messageInput").empty();
+	  $("#sendStatus").empty().text("Message sent!");
         }
       });
   });
