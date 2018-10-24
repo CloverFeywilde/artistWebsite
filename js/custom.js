@@ -13,9 +13,7 @@ $(document).ready(function(){
        text: text},
       function(data){
         if(data=="sent"){
-	  $("#emailInput").empty();
-	  $("#subjectInput").empty();
-	  $("#messageInput").empty();
+	  $('form')[0].reset();
 	  $("#sendStatus").empty().text("Message sent!");
         }
       });
