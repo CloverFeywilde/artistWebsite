@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.prices {
+  text-align: center;
+}
+
 .card-columns .card {
   display: inline-block;
 }
@@ -11,14 +15,77 @@
     font-size: 1.06rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  .formLarge {
+    display: none;
+  }
+
+  .formMed {
+    display: block;
+  }
+
+  .formSmall {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) {
   .navbar-brand {
     font-size: 1.35rem;
+  }
+
+  .formLarge {
+    display: none;
+  }
+
+  .formMed {
+    display: none;
+  }
+
+  .formSmall {
+    display: block;
   }
 }
 @media only screen and (min-width: 992px) {
   .navbar-brand {
     font-size: 1.25rem;
+  }
+
+  .formLarge {
+    display: none;
+  }
+
+  .formMed {
+    display: none;
+  }
+
+  .formSmall {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .formLarge {
+    display: none;
+  }
+
+  .formMed {
+    display: block;
+  }
+
+  .formSmall {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .formLarge {
+    display: block;
+  }
+
+  .formMed {
+    display: none;
+  }
+
+  .formSmall {
+    display: none;
   }
 }
 
